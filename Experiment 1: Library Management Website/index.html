@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Campus Library</h1><p>Find your next great read</p></header>
+  <nav><a href="#catalog">Catalog</a><a href="#borrow">My Borrowing</a><a href="#contact">Contact</a></nav>
+  <main>
+    <section class="hero"><h2>Discover. Read. Learn.</h2><p>Search books available in the college library.</p></section>
+    <section id="catalog">
+      <h2>Book Catalog</h2>
+      <input id="search" type="search" placeholder="Search by title or author..." aria-label="Search books">
+      <div id="books" class="grid"></div>
+    </section>
+    <section id="borrow">
+      <h2>My Borrowing</h2>
+      <p id="borrowed">No books borrowed yet.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact Library</h2>
+      <form id="contactForm"><input required placeholder="Your name"><input type="email" required placeholder="Email address"><textarea required placeholder="Message"></textarea><button>Send message</button></form>
+      <p id="contactStatus" role="status"></p>
+    </section>
+  </main>
+  <footer>Campus Library · Student Book Portal</footer>
+  <script src="script.js"></script>
+</body>
+</html>
