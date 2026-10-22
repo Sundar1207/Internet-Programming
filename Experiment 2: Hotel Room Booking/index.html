@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>StayEase Hotel Booking</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>StayEase</h1><p>Find a comfortable place to stay</p></header>
+<main>
+<section class="hero"><h2>Your next stay starts here</h2><p>Search rooms, check estimated prices, and make a demo booking.</p></section>
+<section class="search">
+<h2>Search Rooms</h2>
+<form id="searchForm">
+<label>Destination<input id="destination" required placeholder="e.g. Chennai"></label>
+<label>Check-in<input id="checkin" type="date" required></label>
+<label>Check-out<input id="checkout" type="date" required></label>
+<label>Guests<select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label>
+<button>Search availability</button>
+</form><p id="searchMessage" role="status"></p>
+</section>
+<section><h2>Available Room Types</h2><div class="rooms">
+<article class="room"><div class="emoji">🛏️</div><h3>Standard Room</h3><p>Wi-Fi · Air conditioning</p><p class="price">₹1,800 / night</p><button data-room="Standard Room" data-price="1800">Book room</button></article>
+<article class="room"><div class="emoji">🌇</div><h3>Deluxe Room</h3><p>Wi-Fi · Breakfast · City view</p><p class="price">₹2,800 / night</p><button data-room="Deluxe Room" data-price="2800">Book room</button></article>
+<article class="room"><div class="emoji">✨</div><h3>Suite</h3><p>Living area · Breakfast · Premium view</p><p class="price">₹4,500 / night</p><button data-room="Suite" data-price="4500">Book room</button></article>
+</div></section>
+<section><h2>Booking Details</h2><div id="bookingResult" class="result">Search for a destination and choose a room to see your booking summary.</div></section>
+</main><footer>StayEase · Demo booking website</footer><script src="script.js"></script></body></html>
