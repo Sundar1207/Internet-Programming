@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>GoBus Ticket Booking</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>GoBus</h1><p>Book your journey with ease</p></header>
+<main>
+<section class="hero"><h2>Where would you like to go?</h2><p>Search routes and choose a seat for your next trip.</p></section>
+<section class="panel"><h2>Find a Bus</h2><form id="busForm">
+<label>From<input id="from" required placeholder="Starting city"></label>
+<label>To<input id="to" required placeholder="Destination city"></label>
+<label>Journey date<input id="date" type="date" required></label>
+<button>Search buses</button></form><p id="message" role="status"></p></section>
+<section id="results" hidden><h2>Available Buses</h2><div class="bus"><div><h3>Express Travels</h3><p>08:00 AM → 01:00 PM · AC Seater</p><p>Fare: ₹650 per seat</p></div><button id="chooseBus">Select seats</button></div></section>
+<section id="seatSection" hidden><h2>Select Seats</h2><p>Choose one or more available seats.</p><div class="legend">🟩 Available　 🟥 Booked　 🟦 Selected</div><div id="seats" class="seats"></div><p id="seatSummary">No seats selected.</p><form id="passengerForm"><label>Passenger name<input id="passenger" required placeholder="Full name"></label><label>Phone number<input id="phone" required pattern="[0-9]{10}" placeholder="10-digit phone number"></label><button>Book ticket</button></form><div id="ticket"></div></section>
+</main><footer>GoBus · Front-end lab experiment</footer><script src="script.js"></script></body></html>
